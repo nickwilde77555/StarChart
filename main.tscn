@@ -1,0 +1,65 @@
+[gd_scene load_steps=2 format=3 uid="uid://cyrhq741l8se7"]
+
+[ext_resource type="Script" uid="uid://bbr2wd5r4kf6v" path="res://main.gd" id="1_jet5f"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_jet5f")
+
+[node name="Background" type="ColorRect" parent="."]
+z_index = -1
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0, 0, 0, 1)
+
+[node name="LaneDisplay" type="ColorRect" parent="Background"]
+z_index = 4
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.90588236, 0, 0.1882353, 0.63529414)
+
+[node name="PlayPause" type="Button" parent="Background"]
+z_index = 5
+layout_mode = 0
+offset_left = 13.0
+offset_top = 601.0
+offset_right = 106.0
+offset_bottom = 632.0
+text = "Play/Pause"
+
+[node name="sPosition" type="Label" parent="Background"]
+z_index = 5
+layout_mode = 0
+offset_left = 17.0
+offset_top = 11.0
+offset_right = 57.0
+offset_bottom = 34.0
+
+[node name="Lanes1" type="ColorRect" parent="Background"]
+z_index = 1
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.42365062, 0.42365065, 0.42365062, 1)
+
+[node name="Lanes2" type="ColorRect" parent="Background"]
+z_index = 1
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.42365062, 0.42365065, 0.42365062, 1)
+
+[node name="Lanes3" type="ColorRect" parent="Background"]
+z_index = 1
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+color = Color(0.42365062, 0.42365065, 0.42365062, 1)
+
+[node name="Export" type="Button" parent="Background"]
+layout_mode = 0
+offset_left = 1080.0
+offset_top = 601.0
+offset_right = 1139.0
+offset_bottom = 632.0
+text = "Export"
